@@ -27,3 +27,24 @@ body {
 .userCaption {
     font-size: 1rem;
 }
+
+.map {
+    background-color: rgb(201, 211, 201);
+    padding: 300px 230px;
+    border-style: solid;
+    border-radius: px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.clientTable {
+    background-color: rgb(159, 234, 161);
+    font-weight: bolder;
+    padding: 5px 10px;
+    margin: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: rgb(118, 177, 120)
+}
