@@ -1,6 +1,6 @@
 /* DATOS DE UN USUARIO */
 
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "./index.html") {
     console.log("Saludos, ahora solo tenemos 2 opciones para ingresar, Una cuenta Admin, Una cuenta del personal para ambos el usuario y contraseña es el mismo: usuario: admin/ contraseña: admin o personal/personal respectivamente.\nEn el futuro, se crearan funciones de acuerdo al usuario, el administrador tendra derechos de borrar una mesa o borrar articulos de la misma, mientras que el Personal tendra acceso muy limitado a las funciones.");
 }
 
