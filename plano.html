@@ -15,26 +15,45 @@
     <header > 
     </header> 
         <div class="container-fluid mt-0">
-            <p class="return col-1 text-center"><a href="index.html">VOLVER</a></p> 
-                <div class="userBlock col-12">               
-                    <div class="map text-center">
-                    <div class="clientTable">Mesa 1</div>        
-                    <div class="clientTable">Mesa 2</div>        
-                    <div class="clientTable">Mesa 3</div>        
-                    <div class="clientTable">Mesa 4</div>        
-                    <div class="clientTable">Mesa 5</div>        
-                    <div class="clientTable">Mesa 6</div>        
-                    <div class="clientTable">Mesa 7</div>        
-                </div>                 
+            <p class="return col-1 text-center"><a href="index.html">VOLVER</a></p>
+                <div class="plane">
+                    <div class="userBlock col-12"> 
+                        <!-- PLANO DE MESAS -->
+                        <div class="map text-center">   
+                            <div class="clientTable" Id="clientTable1">Mesa 1</div>        
+                            <div class="clientTable" Id="clientTable2">Mesa 2</div>        
+                            <div class="clientTable" Id="clientTable3">Mesa 3</div>        
+                            <div class="clientTable" Id="clientTable4">Mesa 4</div>        
+                            <div class="clientTable" Id="clientTable5">Mesa 5</div>        
+                            <div class="clientTable" Id="clientTable6">Mesa 6</div>        
+                            <div class="clientTable" Id="clientTable7">Mesa 7</div>        
+                        </div>
+                        <!-- PANEL DE CONTROL AL ABRIR UNA MESA -->
+                        <div class="controlPanel">
+                            <div class="panelList">
+                                <div id="items">                     
+                                    <li class="liColor">Detalle</li>                       
+                                </div>
+                                <div id="priceperUnit">                        
+                                    <li class="liColor">P.Uni</li>
+                                </div>
+                                <div class="total" id="totalPrice">
+                                    <li class="liColor">Total</li>                        
+                                </div>                                
+                            </div>
+                            <div class="totalfinal" id="tableTotal">TableTotal</div>                            
+                        </div> 
+                        <!-- PANEL DE ITEMS PARA AGREGAR A LA MESA -->
+                        <div class="itemsPanel"></div>
+                    </div>         
+                </div>
         </div>
 <!------------------------ footer -------------------------->
 <footer>
 <!-------------------- to be filled ----------------------->
-    <div>
-    </div>
 </footer>
 <!-------------------- Scripts ----------------------->
-<script src="javascript.js"></script>
+<script src="plano.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

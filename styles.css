@@ -1,15 +1,24 @@
+
+/* VISIBILITY  */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    
 }
 
 body {
     background: rgb(154,168,168);
     background: linear-gradient(36deg, rgba(154,168,168,1) 0%, rgba(255,255,255,1) 45%);
     min-height: 100vh;
+    
 }
+
+.userForm {
+    visibility: visible;
+}
+
 
 .userBlock {
     display: flex;
@@ -29,26 +38,79 @@ body {
     font-size: 1rem;
 }
 
+/* SCREEN CONFIG */
+
 .map {
     background-color: rgb(201, 211, 201);
-    padding: 300px 200px;
+    padding: 300px 20px;
     border-style: solid;
-    border-radius: px;
     display: flex;
-    justify-content: center;
-
 }
 
-.clientTable {
+.plane {
+    display: flex;
+    flex-direction: row;
+}
+
+.clientTable, .tableItem {
     background-color: rgb(159, 234, 161);
     font-weight: bolder;
-    padding: 20px 10px;
-    margin: 15px;
+    min-height: 60px;
+    min-width: 60px;
+    margin: 12px;
+    padding: 6px;
     border-style: solid;
     border-width: 2px;
     border-radius: 7px;
-    border-color: rgb(118, 177, 120)
+    border-color: rgb(118, 177, 120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+li {
+    list-style: none;
+}
+
+.controlPanel {
+    padding: 3rem;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: grey;
+    min-height: 400px;
+    visibility: hidden;
+}
+
+.panelList {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.itemsPanel {
+    visibility: hidden;
+}
+
+.total {
+    margin-left: 2rem;
+}
+
+
+
+.liColor {
+    background-color: grey;
+    border-style: solid;
+    border-color: white;
+    padding: 0px 6px 0px 6px;
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+}
+
+
+/* MISC CSS */
 
 .return {
     color: black(172, 165, 165);
@@ -58,6 +120,16 @@ body {
     border-style: solid;
     border-radius: 10px;
     border-color: grey;
-
 }
 
+#errorMsg {
+    padding-top: 1rem;
+    white-space: nowrap;
+}
+
+.totalfinal {    
+    white-space: nowrap;
+    font-weight: bold;   
+    padding: 1rem;
+    text-align: right;
+}
